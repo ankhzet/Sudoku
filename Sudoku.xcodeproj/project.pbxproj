@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A149AA818E2F2C30033EAAE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6EB8E918E2CFB500A67DEC /* XCTest.framework */; };
 		0A149AAE18E2F2C30033EAAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A149AAC18E2F2C30033EAAE /* InfoPlist.strings */; };
+		0A149AB818E2F3B40033EAAE /* SudokuSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A149AB718E2F3B40033EAAE /* SudokuSpec.m */; };
 		0A6EB8CB18E2CFB500A67DEC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6EB8CA18E2CFB500A67DEC /* Cocoa.framework */; };
 		0A6EB8D518E2CFB500A67DEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A6EB8D318E2CFB500A67DEC /* InfoPlist.strings */; };
 		0A6EB8D718E2CFB500A67DEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6EB8D618E2CFB500A67DEC /* main.m */; };
@@ -16,6 +17,10 @@
 		0A6EB8DE18E2CFB500A67DEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6EB8DD18E2CFB500A67DEC /* AppDelegate.m */; };
 		0A6EB8E118E2CFB500A67DEC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6EB8DF18E2CFB500A67DEC /* MainMenu.xib */; };
 		0A6EB8E318E2CFB500A67DEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A6EB8E218E2CFB500A67DEC /* Images.xcassets */; };
+		0AA25CF918FC212B00ED1558 /* Sudoku+TestAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA25CF818FC212B00ED1558 /* Sudoku+TestAdditions.m */; };
+		0AA25CFB18FC349200ED1558 /* SudokuSolverSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA25CFA18FC349200ED1558 /* SudokuSolverSpec.m */; };
+		0AA25CFD18FC3C3500ED1558 /* SudokuCellSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA25CFC18FC3C3500ED1558 /* SudokuCellSpec.m */; };
+		0AA25CFF18FC3C5E00ED1558 /* SudokuGroupSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA25CFE18FC3C5E00ED1558 /* SudokuGroupSpec.m */; };
 		A8A3C77AF2214890B6991BEB /* libPods-Sudoku Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91762403FC954B8BB63D89B4 /* libPods-Sudoku Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +39,7 @@
 		0A149AAB18E2F2C30033EAAE /* Sudoku Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sudoku Tests-Info.plist"; sourceTree = "<group>"; };
 		0A149AAD18E2F2C30033EAAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A149AB118E2F2C30033EAAE /* Sudoku Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sudoku Tests-Prefix.pch"; sourceTree = "<group>"; };
+		0A149AB718E2F3B40033EAAE /* SudokuSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuSpec.m; sourceTree = "<group>"; };
 		0A6EB8C718E2CFB500A67DEC /* Sudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sudoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6EB8CA18E2CFB500A67DEC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0A6EB8CD18E2CFB500A67DEC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -49,6 +55,11 @@
 		0A6EB8E018E2CFB500A67DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0A6EB8E218E2CFB500A67DEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0A6EB8E918E2CFB500A67DEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0AA25CF718FC212B00ED1558 /* Sudoku+TestAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sudoku+TestAdditions.h"; sourceTree = "<group>"; };
+		0AA25CF818FC212B00ED1558 /* Sudoku+TestAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Sudoku+TestAdditions.m"; sourceTree = "<group>"; };
+		0AA25CFA18FC349200ED1558 /* SudokuSolverSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuSolverSpec.m; sourceTree = "<group>"; };
+		0AA25CFC18FC3C3500ED1558 /* SudokuCellSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuCellSpec.m; sourceTree = "<group>"; };
+		0AA25CFE18FC3C5E00ED1558 /* SudokuGroupSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuGroupSpec.m; sourceTree = "<group>"; };
 		6E7618CC659443AAAEB30A2F /* Pods-Sudoku Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sudoku Tests.xcconfig"; path = "Pods/Pods-Sudoku Tests.xcconfig"; sourceTree = "<group>"; };
 		91762403FC954B8BB63D89B4 /* libPods-Sudoku Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sudoku Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +88,12 @@
 		0A149AA918E2F2C30033EAAE /* Sudoku Tests */ = {
 			isa = PBXGroup;
 			children = (
+				0AA25CFC18FC3C3500ED1558 /* SudokuCellSpec.m */,
+				0AA25CFE18FC3C5E00ED1558 /* SudokuGroupSpec.m */,
+				0A149AB718E2F3B40033EAAE /* SudokuSpec.m */,
+				0AA25CFA18FC349200ED1558 /* SudokuSolverSpec.m */,
+				0AA25CF718FC212B00ED1558 /* Sudoku+TestAdditions.h */,
+				0AA25CF818FC212B00ED1558 /* Sudoku+TestAdditions.m */,
 				0A149AAA18E2F2C30033EAAE /* Supporting Files */,
 			);
 			path = "Sudoku Tests";
@@ -298,6 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA25CF918FC212B00ED1558 /* Sudoku+TestAdditions.m in Sources */,
+				0AA25CFF18FC3C5E00ED1558 /* SudokuGroupSpec.m in Sources */,
+				0AA25CFD18FC3C3500ED1558 /* SudokuCellSpec.m in Sources */,
+				0A149AB818E2F3B40033EAAE /* SudokuSpec.m in Sources */,
+				0AA25CFB18FC349200ED1558 /* SudokuSolverSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
