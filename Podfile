@@ -1,5 +1,5 @@
 platform :osx, '10.8'
 
-target :SudokuTests do
-	pod 'Kiwi'
+target :'Sudoku Tests', :exclusive => true do
+	pod 'Kiwi/XCTest'
 end

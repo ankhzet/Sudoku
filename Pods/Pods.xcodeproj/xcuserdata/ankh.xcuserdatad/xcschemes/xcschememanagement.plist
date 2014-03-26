@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-SudokuTests-Kiwi.xcscheme</key>
+		<key>Pods-Sudoku Tests-Kiwi.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-SudokuTests.xcscheme</key>
+		<key>Pods-Sudoku Tests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2B18BD0957274CBFB21DFE7C</key>
+		<key>933B0731520F4F73B840382A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>923A369CCD984A40A527EA2C</key>
+		<key>E5CDCADFE92F4D98BF1CF7D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

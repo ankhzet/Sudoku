@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		052D517DBBCC45B7851F7891 /* libPods-SudokuTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 224344D6F0424909A5703B3F /* libPods-SudokuTests.a */; };
+		0A149AA818E2F2C30033EAAE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6EB8E918E2CFB500A67DEC /* XCTest.framework */; };
+		0A149AAE18E2F2C30033EAAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A149AAC18E2F2C30033EAAE /* InfoPlist.strings */; };
 		0A6EB8CB18E2CFB500A67DEC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6EB8CA18E2CFB500A67DEC /* Cocoa.framework */; };
 		0A6EB8D518E2CFB500A67DEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A6EB8D318E2CFB500A67DEC /* InfoPlist.strings */; };
 		0A6EB8D718E2CFB500A67DEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6EB8D618E2CFB500A67DEC /* main.m */; };
@@ -15,14 +16,11 @@
 		0A6EB8DE18E2CFB500A67DEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6EB8DD18E2CFB500A67DEC /* AppDelegate.m */; };
 		0A6EB8E118E2CFB500A67DEC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6EB8DF18E2CFB500A67DEC /* MainMenu.xib */; };
 		0A6EB8E318E2CFB500A67DEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A6EB8E218E2CFB500A67DEC /* Images.xcassets */; };
-		0A6EB8EA18E2CFB500A67DEC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6EB8E918E2CFB500A67DEC /* XCTest.framework */; };
-		0A6EB8EB18E2CFB500A67DEC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6EB8CA18E2CFB500A67DEC /* Cocoa.framework */; };
-		0A6EB8F318E2CFB500A67DEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A6EB8F118E2CFB500A67DEC /* InfoPlist.strings */; };
-		0A6EB8FF18E2CFF600A67DEC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0A6EB8FE18E2CFF600A67DEC /* Podfile */; };
+		A8A3C77AF2214890B6991BEB /* libPods-Sudoku Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91762403FC954B8BB63D89B4 /* libPods-Sudoku Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A6EB8EC18E2CFB500A67DEC /* PBXContainerItemProxy */ = {
+		0A149AB218E2F2C30033EAAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0A6EB8BF18E2CFB500A67DEC /* Project object */;
 			proxyType = 1;
@@ -32,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A149AA718E2F2C30033EAAE /* Sudoku Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sudoku Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A149AAB18E2F2C30033EAAE /* Sudoku Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sudoku Tests-Info.plist"; sourceTree = "<group>"; };
+		0A149AAD18E2F2C30033EAAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A149AB118E2F2C30033EAAE /* Sudoku Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sudoku Tests-Prefix.pch"; sourceTree = "<group>"; };
 		0A6EB8C718E2CFB500A67DEC /* Sudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sudoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6EB8CA18E2CFB500A67DEC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0A6EB8CD18E2CFB500A67DEC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -46,16 +48,21 @@
 		0A6EB8DD18E2CFB500A67DEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0A6EB8E018E2CFB500A67DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0A6EB8E218E2CFB500A67DEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0A6EB8E818E2CFB500A67DEC /* SudokuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SudokuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6EB8E918E2CFB500A67DEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		0A6EB8F018E2CFB500A67DEC /* SudokuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SudokuTests-Info.plist"; sourceTree = "<group>"; };
-		0A6EB8F218E2CFB500A67DEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0A6EB8FE18E2CFF600A67DEC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		224344D6F0424909A5703B3F /* libPods-SudokuTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SudokuTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEC00FD40E3A4F13AD64F532 /* Pods-SudokuTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuTests.xcconfig"; path = "Pods/Pods-SudokuTests.xcconfig"; sourceTree = "<group>"; };
+		6E7618CC659443AAAEB30A2F /* Pods-Sudoku Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sudoku Tests.xcconfig"; path = "Pods/Pods-Sudoku Tests.xcconfig"; sourceTree = "<group>"; };
+		91762403FC954B8BB63D89B4 /* libPods-Sudoku Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sudoku Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A149AA418E2F2C30033EAAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A149AA818E2F2C30033EAAE /* XCTest.framework in Frameworks */,
+				A8A3C77AF2214890B6991BEB /* libPods-Sudoku Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A6EB8C418E2CFB500A67DEC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,28 +71,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A6EB8E518E2CFB500A67DEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A6EB8EB18E2CFB500A67DEC /* Cocoa.framework in Frameworks */,
-				0A6EB8EA18E2CFB500A67DEC /* XCTest.framework in Frameworks */,
-				052D517DBBCC45B7851F7891 /* libPods-SudokuTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A149AA918E2F2C30033EAAE /* Sudoku Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0A149AAA18E2F2C30033EAAE /* Supporting Files */,
+			);
+			path = "Sudoku Tests";
+			sourceTree = "<group>";
+		};
+		0A149AAA18E2F2C30033EAAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A149AAB18E2F2C30033EAAE /* Sudoku Tests-Info.plist */,
+				0A149AAC18E2F2C30033EAAE /* InfoPlist.strings */,
+				0A149AB118E2F2C30033EAAE /* Sudoku Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0A6EB8BE18E2CFB500A67DEC = {
 			isa = PBXGroup;
 			children = (
-				0A6EB8FE18E2CFF600A67DEC /* Podfile */,
 				0A6EB8D018E2CFB500A67DEC /* Sudoku */,
-				0A6EB8EE18E2CFB500A67DEC /* SudokuTests */,
+				0A149AA918E2F2C30033EAAE /* Sudoku Tests */,
 				0A6EB8C918E2CFB500A67DEC /* Frameworks */,
 				0A6EB8C818E2CFB500A67DEC /* Products */,
-				BEC00FD40E3A4F13AD64F532 /* Pods-SudokuTests.xcconfig */,
+				6E7618CC659443AAAEB30A2F /* Pods-Sudoku Tests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				0A6EB8C718E2CFB500A67DEC /* Sudoku.app */,
-				0A6EB8E818E2CFB500A67DEC /* SudokuTests.xctest */,
+				0A149AA718E2F2C30033EAAE /* Sudoku Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,7 +118,7 @@
 				0A6EB8CA18E2CFB500A67DEC /* Cocoa.framework */,
 				0A6EB8E918E2CFB500A67DEC /* XCTest.framework */,
 				0A6EB8CC18E2CFB500A67DEC /* Other Frameworks */,
-				224344D6F0424909A5703B3F /* libPods-SudokuTests.a */,
+				91762403FC954B8BB63D89B4 /* libPods-Sudoku Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,6 +139,7 @@
 				0A6EB8DC18E2CFB500A67DEC /* AppDelegate.h */,
 				0A6EB8DD18E2CFB500A67DEC /* AppDelegate.m */,
 				0A6EB8DF18E2CFB500A67DEC /* MainMenu.xib */,
+				0A6EB90518E2D96000A67DEC /* Core */,
 				0A6EB8E218E2CFB500A67DEC /* Images.xcassets */,
 				0A6EB8D118E2CFB500A67DEC /* Supporting Files */,
 			);
@@ -143,26 +158,36 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0A6EB8EE18E2CFB500A67DEC /* SudokuTests */ = {
+		0A6EB90518E2D96000A67DEC /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				0A6EB8EF18E2CFB500A67DEC /* Supporting Files */,
 			);
-			path = SudokuTests;
-			sourceTree = "<group>";
-		};
-		0A6EB8EF18E2CFB500A67DEC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0A6EB8F018E2CFB500A67DEC /* SudokuTests-Info.plist */,
-				0A6EB8F118E2CFB500A67DEC /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0A149AA618E2F2C30033EAAE /* Sudoku Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A149AB418E2F2C30033EAAE /* Build configuration list for PBXNativeTarget "Sudoku Tests" */;
+			buildPhases = (
+				56935C43FEF444D1BCA7A77D /* Check Pods Manifest.lock */,
+				0A149AA318E2F2C30033EAAE /* Sources */,
+				0A149AA418E2F2C30033EAAE /* Frameworks */,
+				0A149AA518E2F2C30033EAAE /* Resources */,
+				85156561A7764394A620224C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A149AB318E2F2C30033EAAE /* PBXTargetDependency */,
+			);
+			name = "Sudoku Tests";
+			productName = "Sudoku Tests";
+			productReference = 0A149AA718E2F2C30033EAAE /* Sudoku Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0A6EB8C618E2CFB500A67DEC /* Sudoku */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A6EB8F818E2CFB500A67DEC /* Build configuration list for PBXNativeTarget "Sudoku" */;
@@ -180,26 +205,6 @@
 			productReference = 0A6EB8C718E2CFB500A67DEC /* Sudoku.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A6EB8E718E2CFB500A67DEC /* SudokuTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A6EB8FB18E2CFB500A67DEC /* Build configuration list for PBXNativeTarget "SudokuTests" */;
-			buildPhases = (
-				7673C411C64B48F69AD688A0 /* Check Pods Manifest.lock */,
-				0A6EB8E418E2CFB500A67DEC /* Sources */,
-				0A6EB8E518E2CFB500A67DEC /* Frameworks */,
-				0A6EB8E618E2CFB500A67DEC /* Resources */,
-				EFFF00C23D9B49E8844A0BD0 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A6EB8ED18E2CFB500A67DEC /* PBXTargetDependency */,
-			);
-			name = SudokuTests;
-			productName = SudokuTests;
-			productReference = 0A6EB8E818E2CFB500A67DEC /* SudokuTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,7 +214,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Ankh;
 				TargetAttributes = {
-					0A6EB8E718E2CFB500A67DEC = {
+					0A149AA618E2F2C30033EAAE = {
 						TestTargetID = 0A6EB8C618E2CFB500A67DEC;
 					};
 				};
@@ -228,17 +233,24 @@
 			projectRoot = "";
 			targets = (
 				0A6EB8C618E2CFB500A67DEC /* Sudoku */,
-				0A6EB8E718E2CFB500A67DEC /* SudokuTests */,
+				0A149AA618E2F2C30033EAAE /* Sudoku Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0A149AA518E2F2C30033EAAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A149AAE18E2F2C30033EAAE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A6EB8C518E2CFB500A67DEC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A6EB8FF18E2CFF600A67DEC /* Podfile in Resources */,
 				0A6EB8D518E2CFB500A67DEC /* InfoPlist.strings in Resources */,
 				0A6EB8E318E2CFB500A67DEC /* Images.xcassets in Resources */,
 				0A6EB8DB18E2CFB500A67DEC /* Credits.rtf in Resources */,
@@ -246,18 +258,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A6EB8E618E2CFB500A67DEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A6EB8F318E2CFB500A67DEC /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7673C411C64B48F69AD688A0 /* Check Pods Manifest.lock */ = {
+		56935C43FEF444D1BCA7A77D /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,7 +276,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		EFFF00C23D9B49E8844A0BD0 /* Copy Pods Resources */ = {
+		85156561A7764394A620224C /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,12 +288,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-SudokuTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-Sudoku Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A149AA318E2F2C30033EAAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A6EB8C318E2CFB500A67DEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,24 +310,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A6EB8E418E2CFB500A67DEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0A6EB8ED18E2CFB500A67DEC /* PBXTargetDependency */ = {
+		0A149AB318E2F2C30033EAAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0A6EB8C618E2CFB500A67DEC /* Sudoku */;
-			targetProxy = 0A6EB8EC18E2CFB500A67DEC /* PBXContainerItemProxy */;
+			targetProxy = 0A149AB218E2F2C30033EAAE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0A149AAC18E2F2C30033EAAE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A149AAD18E2F2C30033EAAE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		0A6EB8D318E2CFB500A67DEC /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,17 +353,49 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
-		0A6EB8F118E2CFB500A67DEC /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A6EB8F218E2CFB500A67DEC /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0A149AB518E2F2C30033EAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E7618CC659443AAAEB30A2F /* Pods-Sudoku Tests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sudoku.app/Contents/MacOS/Sudoku";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sudoku Tests/Sudoku Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Sudoku Tests/Sudoku Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"TEST_HOST[sdk=*]" = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0A149AB618E2F2C30033EAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E7618CC659443AAAEB30A2F /* Pods-Sudoku Tests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sudoku.app/Contents/MacOS/Sudoku";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sudoku Tests/Sudoku Tests-Prefix.pch";
+				INFOPLIST_FILE = "Sudoku Tests/Sudoku Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"TEST_HOST[sdk=*]" = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		0A6EB8F618E2CFB500A67DEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -416,6 +460,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -428,7 +473,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sudoku/Sudoku-Prefix.pch";
 				INFOPLIST_FILE = "Sudoku/Sudoku-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -442,57 +486,23 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sudoku/Sudoku-Prefix.pch";
 				INFOPLIST_FILE = "Sudoku/Sudoku-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		0A6EB8FC18E2CFB500A67DEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEC00FD40E3A4F13AD64F532 /* Pods-SudokuTests.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sudoku.app/Contents/MacOS/Sudoku";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sudoku/Sudoku-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "SudokuTests/SudokuTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		0A6EB8FD18E2CFB500A67DEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEC00FD40E3A4F13AD64F532 /* Pods-SudokuTests.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sudoku.app/Contents/MacOS/Sudoku";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sudoku/Sudoku-Prefix.pch";
-				INFOPLIST_FILE = "SudokuTests/SudokuTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A149AB418E2F2C30033EAAE /* Build configuration list for PBXNativeTarget "Sudoku Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A149AB518E2F2C30033EAAE /* Debug */,
+				0A149AB618E2F2C30033EAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0A6EB8C218E2CFB500A67DEC /* Build configuration list for PBXProject "Sudoku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -507,15 +517,6 @@
 			buildConfigurations = (
 				0A6EB8F918E2CFB500A67DEC /* Debug */,
 				0A6EB8FA18E2CFB500A67DEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A6EB8FB18E2CFB500A67DEC /* Build configuration list for PBXNativeTarget "SudokuTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A6EB8FC18E2CFB500A67DEC /* Debug */,
-				0A6EB8FD18E2CFB500A67DEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
