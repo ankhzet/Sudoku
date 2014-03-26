@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052D517DBBCC45B7851F7891 /* libPods-SudokuTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 224344D6F0424909A5703B3F /* libPods-SudokuTests.a */; };
 		0A6EB8CB18E2CFB500A67DEC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6EB8CA18E2CFB500A67DEC /* Cocoa.framework */; };
 		0A6EB8D518E2CFB500A67DEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A6EB8D318E2CFB500A67DEC /* InfoPlist.strings */; };
 		0A6EB8D718E2CFB500A67DEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6EB8D618E2CFB500A67DEC /* main.m */; };
@@ -17,7 +18,7 @@
 		0A6EB8EA18E2CFB500A67DEC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6EB8E918E2CFB500A67DEC /* XCTest.framework */; };
 		0A6EB8EB18E2CFB500A67DEC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6EB8CA18E2CFB500A67DEC /* Cocoa.framework */; };
 		0A6EB8F318E2CFB500A67DEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A6EB8F118E2CFB500A67DEC /* InfoPlist.strings */; };
-		0A6EB8F518E2CFB500A67DEC /* SudokuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6EB8F418E2CFB500A67DEC /* SudokuTests.m */; };
+		0A6EB8FF18E2CFF600A67DEC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0A6EB8FE18E2CFF600A67DEC /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,9 @@
 		0A6EB8E918E2CFB500A67DEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0A6EB8F018E2CFB500A67DEC /* SudokuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SudokuTests-Info.plist"; sourceTree = "<group>"; };
 		0A6EB8F218E2CFB500A67DEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0A6EB8F418E2CFB500A67DEC /* SudokuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SudokuTests.m; sourceTree = "<group>"; };
+		0A6EB8FE18E2CFF600A67DEC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		224344D6F0424909A5703B3F /* libPods-SudokuTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SudokuTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC00FD40E3A4F13AD64F532 /* Pods-SudokuTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuTests.xcconfig"; path = "Pods/Pods-SudokuTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 			files = (
 				0A6EB8EB18E2CFB500A67DEC /* Cocoa.framework in Frameworks */,
 				0A6EB8EA18E2CFB500A67DEC /* XCTest.framework in Frameworks */,
+				052D517DBBCC45B7851F7891 /* libPods-SudokuTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,10 +80,12 @@
 		0A6EB8BE18E2CFB500A67DEC = {
 			isa = PBXGroup;
 			children = (
+				0A6EB8FE18E2CFF600A67DEC /* Podfile */,
 				0A6EB8D018E2CFB500A67DEC /* Sudoku */,
 				0A6EB8EE18E2CFB500A67DEC /* SudokuTests */,
 				0A6EB8C918E2CFB500A67DEC /* Frameworks */,
 				0A6EB8C818E2CFB500A67DEC /* Products */,
+				BEC00FD40E3A4F13AD64F532 /* Pods-SudokuTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +104,7 @@
 				0A6EB8CA18E2CFB500A67DEC /* Cocoa.framework */,
 				0A6EB8E918E2CFB500A67DEC /* XCTest.framework */,
 				0A6EB8CC18E2CFB500A67DEC /* Other Frameworks */,
+				224344D6F0424909A5703B3F /* libPods-SudokuTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,7 +146,6 @@
 		0A6EB8EE18E2CFB500A67DEC /* SudokuTests */ = {
 			isa = PBXGroup;
 			children = (
-				0A6EB8F418E2CFB500A67DEC /* SudokuTests.m */,
 				0A6EB8EF18E2CFB500A67DEC /* Supporting Files */,
 			);
 			path = SudokuTests;
@@ -178,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A6EB8FB18E2CFB500A67DEC /* Build configuration list for PBXNativeTarget "SudokuTests" */;
 			buildPhases = (
+				7673C411C64B48F69AD688A0 /* Check Pods Manifest.lock */,
 				0A6EB8E418E2CFB500A67DEC /* Sources */,
 				0A6EB8E518E2CFB500A67DEC /* Frameworks */,
 				0A6EB8E618E2CFB500A67DEC /* Resources */,
+				EFFF00C23D9B49E8844A0BD0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6EB8FF18E2CFF600A67DEC /* Podfile in Resources */,
 				0A6EB8D518E2CFB500A67DEC /* InfoPlist.strings in Resources */,
 				0A6EB8E318E2CFB500A67DEC /* Images.xcassets in Resources */,
 				0A6EB8DB18E2CFB500A67DEC /* Credits.rtf in Resources */,
@@ -247,6 +256,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7673C411C64B48F69AD688A0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFFF00C23D9B49E8844A0BD0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SudokuTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A6EB8C318E2CFB500A67DEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,7 +303,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A6EB8F518E2CFB500A67DEC /* SudokuTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +428,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sudoku/Sudoku-Prefix.pch";
 				INFOPLIST_FILE = "Sudoku/Sudoku-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -400,6 +442,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sudoku/Sudoku-Prefix.pch";
 				INFOPLIST_FILE = "Sudoku/Sudoku-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -407,6 +450,7 @@
 		};
 		0A6EB8FC18E2CFB500A67DEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC00FD40E3A4F13AD64F532 /* Pods-SudokuTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sudoku.app/Contents/MacOS/Sudoku";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -429,6 +473,7 @@
 		};
 		0A6EB8FD18E2CFB500A67DEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC00FD40E3A4F13AD64F532 /* Pods-SudokuTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sudoku.app/Contents/MacOS/Sudoku";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -464,6 +509,7 @@
 				0A6EB8FA18E2CFB500A67DEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A6EB8FB18E2CFB500A67DEC /* Build configuration list for PBXNativeTarget "SudokuTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +518,7 @@
 				0A6EB8FD18E2CFB500A67DEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
