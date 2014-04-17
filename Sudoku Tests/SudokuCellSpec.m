@@ -9,19 +9,24 @@
 
 #import "Kiwi.h"
 #import "SudokuCell.h"
+#import "Sudoku.h"
 
 SPEC_BEGIN(SudokuCellSpec)
 
 describe(@"SudokuCell", ^{
 	it(@"should properly initialize", ^{
-		SudokuCell *instance = [SudokuCell new];
+		Sudoku *sudokuMock = [Sudoku mock];
+		NSUInteger x = 3, y = 5;
+		SudokuCell *instance = [SudokuCell cellForSudoku:sudokuMock atX:x andY:y];
 		[[instance shouldNot] beNil];
 		[[instance should] beKindOfClass:[SudokuCell class]];
+
+		[[instance.sudoku should] equal:sudokuMock];
+
+		[[theValue(instance.x) should] equal:theValue(x)];
+		[[theValue(instance.y) should] equal:theValue(y)];
 	});
 
-	it(@"should ", ^{
-
-	});
 });
 
 SPEC_END

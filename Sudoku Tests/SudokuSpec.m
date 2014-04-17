@@ -20,10 +20,12 @@ describe(@"Sudoku", ^{
 		Sudoku *instance = [Sudoku sudoku];
 		[[instance shouldNot] beNil];
 		[[instance should] beKindOfClass:[Sudoku class]];
+		[[theValue(instance.groupsCount) should] equal:theValue(SUDOKU_DEFAULT_SIZE)];
 	});
 
 	it(@"should properly set size", ^{
 		Sudoku *sudoku = [Sudoku sudoku];
+		[[theValue(sudoku.groupsCount) should] equal:theValue(SUDOKU_DEFAULT_SIZE)];
 
 		NSUInteger testSize = 9;
 
