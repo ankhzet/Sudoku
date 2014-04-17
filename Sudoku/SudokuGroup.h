@@ -35,12 +35,18 @@ typedef NS_ENUM(NSUInteger, SudokuGroupType) {
 - (SudokuCell *) cellAt:(NSUInteger)index;
 - (NSInteger) cellIndex:(SudokuCell *)cell;
 
+/*!@brief Fetches set of supported numbers, that can be placed in cells of sudoku of certain size.
+ Ex, for sudoku 9x9 that will be [1..9].*/
 - (NSSet *) numbers;
 
+/*!@brief Numbers, than not used yet by this group.*/
 - (NSSet *) unusedNumbers;
+/*!@brief Numbers, already used by this group.*/
 - (NSSet *) usedNumbers;
 
+/*!@brief Returns set of unused cells in this group.*/
 - (NSSet *) unusedCells;
+/*!@brief Returns set of used cells in this group.*/
 - (NSSet *) usedCells;
 
 @end
