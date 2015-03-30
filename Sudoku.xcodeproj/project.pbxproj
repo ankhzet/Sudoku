@@ -10,6 +10,9 @@
 		0A149AA818E2F2C30033EAAE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6EB8E918E2CFB500A67DEC /* XCTest.framework */; };
 		0A149AAE18E2F2C30033EAAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A149AAC18E2F2C30033EAAE /* InfoPlist.strings */; };
 		0A149AB818E2F3B40033EAAE /* SudokuSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A149AB718E2F3B40033EAAE /* SudokuSpec.m */; };
+		0A22DA0618FFDE8500943FEA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DA0518FFDE8500943FEA /* MainViewController.m */; };
+		0A22DA1818FFF33B00943FEA /* SudokuViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DA1618FFF33B00943FEA /* SudokuViewItem.m */; };
+		0A22DA1918FFF33B00943FEA /* SudokuViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A22DA1718FFF33B00943FEA /* SudokuViewItem.xib */; };
 		0A4CB57718FC085200360110 /* SudokuSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4CB57618FC085200360110 /* SudokuSolver.m */; };
 		0A6EB8CB18E2CFB500A67DEC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6EB8CA18E2CFB500A67DEC /* Cocoa.framework */; };
 		0A6EB8D518E2CFB500A67DEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A6EB8D318E2CFB500A67DEC /* InfoPlist.strings */; };
@@ -44,6 +47,11 @@
 		0A149AAD18E2F2C30033EAAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A149AB118E2F2C30033EAAE /* Sudoku Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sudoku Tests-Prefix.pch"; sourceTree = "<group>"; };
 		0A149AB718E2F3B40033EAAE /* SudokuSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuSpec.m; sourceTree = "<group>"; };
+		0A22DA0418FFDE8500943FEA /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0A22DA0518FFDE8500943FEA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0A22DA1518FFF33B00943FEA /* SudokuViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SudokuViewItem.h; sourceTree = "<group>"; };
+		0A22DA1618FFF33B00943FEA /* SudokuViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuViewItem.m; sourceTree = "<group>"; };
+		0A22DA1718FFF33B00943FEA /* SudokuViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SudokuViewItem.xib; sourceTree = "<group>"; };
 		0A4CB57518FC085200360110 /* SudokuSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SudokuSolver.h; sourceTree = "<group>"; };
 		0A4CB57618FC085200360110 /* SudokuSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuSolver.m; sourceTree = "<group>"; };
 		0A6EB8C718E2CFB500A67DEC /* Sudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sudoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +129,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0A22DA0718FFDF2100943FEA /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				0A6EB8DF18E2CFB500A67DEC /* MainMenu.xib */,
+				0A22DA0418FFDE8500943FEA /* MainViewController.h */,
+				0A22DA0518FFDE8500943FEA /* MainViewController.m */,
+				0A22DA1518FFF33B00943FEA /* SudokuViewItem.h */,
+				0A22DA1618FFF33B00943FEA /* SudokuViewItem.m */,
+				0A22DA1718FFF33B00943FEA /* SudokuViewItem.xib */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
 		0A6EB8BE18E2CFB500A67DEC = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +188,7 @@
 			children = (
 				0A6EB8DC18E2CFB500A67DEC /* AppDelegate.h */,
 				0A6EB8DD18E2CFB500A67DEC /* AppDelegate.m */,
-				0A6EB8DF18E2CFB500A67DEC /* MainMenu.xib */,
+				0A22DA0718FFDF2100943FEA /* GUI */,
 				0A6EB90518E2D96000A67DEC /* Core */,
 				0A6EB8E218E2CFB500A67DEC /* Images.xcassets */,
 				0A6EB8D118E2CFB500A67DEC /* Supporting Files */,
@@ -288,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A22DA1918FFF33B00943FEA /* SudokuViewItem.xib in Resources */,
 				0A6EB8D518E2CFB500A67DEC /* InfoPlist.strings in Resources */,
 				0A6EB8E318E2CFB500A67DEC /* Images.xcassets in Resources */,
 				0A6EB8DB18E2CFB500A67DEC /* Credits.rtf in Resources */,
@@ -347,10 +369,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A22DA1818FFF33B00943FEA /* SudokuViewItem.m in Sources */,
 				0A6EB8DE18E2CFB500A67DEC /* AppDelegate.m in Sources */,
 				0A4CB57718FC085200360110 /* SudokuSolver.m in Sources */,
 				0A6EB90B18E2DEAC00A67DEC /* SudokuGroup.m in Sources */,
 				0A6EB90418E2D95900A67DEC /* Sudoku.m in Sources */,
+				0A22DA0618FFDE8500943FEA /* MainViewController.m in Sources */,
 				0A6EB90818E2DEA000A67DEC /* SudokuCell.m in Sources */,
 				0A6EB8D718E2CFB500A67DEC /* main.m in Sources */,
 			);

@@ -198,12 +198,13 @@
                             <rect key="frame" x="1" y="1" width="298" height="298"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <collectionView maxNumberOfRows="9" maxNumberOfColumns="9" id="cDg-PO-9pc">
+                                <collectionView selectable="YES" maxNumberOfRows="9" maxNumberOfColumns="9" id="cDg-PO-9pc">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="primaryBackgroundColor" name="controlAlternatingRowColor" catalog="System" colorSpace="catalog"/>
                                     <color key="secondaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <connections>
+                                        <binding destination="z6f-xo-WCP" name="content" keyPath="arrangedObjects" id="viK-kb-x1f"/>
                                         <outlet property="itemPrototype" destination="dCz-HJ-Bxe" id="TgF-cv-lvs"/>
                                     </connections>
                                 </collectionView>
@@ -222,6 +223,17 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XiA-B2-Oqw">
+                        <rect key="frame" x="322" y="292" width="134" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Solve" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8Bz-67-nMi">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="actionSolve:" target="wah-U3-5oM" id="p35-gp-IRP"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="978-AT-AYk" firstAttribute="top" secondItem="372" secondAttribute="top" constant="20" symbolic="YES" id="jcu-2h-rH2"/>
@@ -235,19 +247,19 @@
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
-        <viewController id="wah-U3-5oM">
+        <viewController id="wah-U3-5oM" customClass="MainViewController">
             <connections>
+                <outlet property="arrayController" destination="z6f-xo-WCP" id="n6R-kQ-tsP"/>
+                <outlet property="collectionViewSudoku" destination="cDg-PO-9pc" id="KXg-oR-49w"/>
                 <outlet property="view" destination="372" id="bfg-vF-Fs7"/>
             </connections>
         </viewController>
-        <collectionViewItem id="dCz-HJ-Bxe">
+        <collectionViewItem nibName="" id="dCz-HJ-Bxe" customClass="SudokuViewItem"/>
+        <arrayController id="z6f-xo-WCP">
             <connections>
-                <outlet property="view" destination="TGX-eE-tsz" id="MTy-rB-Yyk"/>
+                <binding destination="wah-U3-5oM" name="contentArray" keyPath="sudokuArray" id="DAV-hd-L2P"/>
             </connections>
-        </collectionViewItem>
-        <view id="TGX-eE-tsz">
-            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
+        </arrayController>
+        <userDefaultsController representsSharedInstance="YES" id="Kzj-2E-zcv"/>
     </objects>
 </document>
